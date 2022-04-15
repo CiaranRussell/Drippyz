@@ -20,20 +20,20 @@
                     ProductName = products.ProductName,
                     ProductDescription = products.ProductDescription,
                     ProductPrice = products.ProductPrice,
-                    ProductQuanity = products.ProductQuanity,
-                    Quanity = 1
+                    ProductQuantity = products.ProductQuantity,
+                    Quantity = 1
                 });
             }
             else
             {
-                match.Quanity++;
+                match.Quantity++;
             }
             
         }
 
         public double CalculateTotalPrice()
         {
-            return _products.Sum(prd => prd.ProductPrice * prd.Quanity);
+            return _products.Sum(prd => prd.ProductPrice * prd.Quantity);
         }
 
     }

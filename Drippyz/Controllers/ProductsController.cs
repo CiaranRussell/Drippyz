@@ -56,7 +56,7 @@ namespace Drippyz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ProductCode,ProductName,ProductPrice,ProductDescription,ProductQuanity")] Products products)
+        public async Task<IActionResult> Create([Bind("ProductCode,ProductName,ProductPrice,ProductDescription,ProductQuantity")] Products products)
         {
             if (ModelState.IsValid)
             {
@@ -88,7 +88,7 @@ namespace Drippyz.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("ProductCode,ProductName,ProductPrice,ProductDescription,ProductQuanity")] Products products)
+        public async Task<IActionResult> Edit(string id, [Bind("ProductCode,ProductName,ProductPrice,ProductDescription,ProductQuantity")] Products products)
         {
             if (id != products.ProductCode)
             {

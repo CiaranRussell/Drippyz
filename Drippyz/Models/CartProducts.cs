@@ -4,7 +4,7 @@ namespace Drippyz.Models
 {
     public class CartProducts : Products
     {
-        [Required(ErrorMessage = "Quanity is required")]
-        public int Quanity { get; set; }
+        [Required(ErrorMessage = "Quantity is required")]
+        public int Quantity { get; set; }
     }
 }
