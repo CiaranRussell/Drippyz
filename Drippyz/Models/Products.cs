@@ -22,5 +22,9 @@ namespace Drippyz.Models
         [DisplayName("Description")]
         [MaxLength(140, ErrorMessage = "Description must not contain more than 140 characters")]
         public string ProductDescription { get; set; }
+
+        [DisplayName("Quanity")]
+        [Required(ErrorMessage = "Quanity is required")]
+        public int ProductQuanity { get; set; }
     }
 }

@@ -20,6 +20,7 @@
                     ProductName = products.ProductName,
                     ProductDescription = products.ProductDescription,
                     ProductPrice = products.ProductPrice,
+                    ProductQuanity = products.ProductQuanity,
                     Quanity = 1
                 });
             }

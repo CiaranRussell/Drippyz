@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Drippyz.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ProductsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProductsContext") ?? throw new InvalidOperationException("Connection string 'ProductsContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
